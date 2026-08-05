@@ -3,12 +3,21 @@ SERVICE ENUMERATION REPORT
 ================================
 
 Target: 127.0.0.1
-Date: 2026-08-04 07:52:17.133943
+Date: 2026-08-04 17:20:12.979768
+
+--------------------------------
+Port: 8000
+Service: HTTP-Alt
+Banner: HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.13.12
+Date: Tue, 04 Aug 2026 21:20:12 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 2172
 
 ================================
 SCAN SUMMARY
 ================================
 Target: 127.0.0.1
 Ports Scanned: 14
-Open Ports: 0
-Scan Time: 0.01 seconds
+Open Ports: 1
+Scan Time: 0.03 seconds

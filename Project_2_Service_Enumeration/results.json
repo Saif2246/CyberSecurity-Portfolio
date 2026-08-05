@@ -1,0 +1,14 @@
+{
+    "target": "127.0.0.1",
+    "date": "2026-08-04 17:20:13.005625",
+    "ports_scanned": 14,
+    "open_ports": 1,
+    "scan_time": "0.03 seconds",
+    "results": [
+        {
+            "port": 8000,
+            "service": "HTTP-Alt",
+            "banner": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.13.12\r\nDate: Tue, 04 Aug 2026 21:20:12 GMT\r\nContent-type: text/html; charset=utf-8\r\nContent-Length: 2172"
+        }
+    ]
+}

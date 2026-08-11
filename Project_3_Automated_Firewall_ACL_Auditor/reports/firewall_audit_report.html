@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Firewall Security Audit Report</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        h1 {
+            color: #1f2937;
+        }
+
+        h2 {
+            margin-top: 35px;
+            color: #374151;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            color: #374151;
+        }
+
+        .card p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .stat {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1f2937;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .critical {
+            color: #b91c1c;
+        }
+
+        .high {
+            color: #dc2626;
+        }
+
+        .medium {
+            color: #d97706;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Firewall Security Audit Report</h1>
+
+    <p>
+        Automated security assessment of firewall and ACL rules.
+    </p>
+
+
+    <h2>Security Risk Summary</h2>
+
+    <div class="summary">
+
+        <div class="card">
+            <h3>Total Rules</h3>
+            <p>12</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Findings</h3>
+            <p>7</p>
+        </div>
+
+        <div class="card">
+            <h3>Risk Score</h3>
+            <p>65</p>
+        </div>
+
+        <div class="card">
+            <h3>Overall Risk</h3>
+            <p class="critical">CRITICAL</p>
+        </div>
+
+    </div>
+
+
+    <h2>Rule Statistics</h2>
+
+    <div class="statistics">
+
+        <div class="stat">
+            ALLOW Rules
+            <strong>11</strong>
+        </div>
+
+        <div class="stat">
+            DENY Rules
+            <strong>1</strong>
+        </div>
+
+        <div class="stat">
+            TCP Rules
+            <strong>8</strong>
+        </div>
+
+        <div class="stat">
+            UDP Rules
+            <strong>2</strong>
+        </div>
+
+        <div class="stat">
+            ICMP Rules
+            <strong>1</strong>
+        </div>
+
+        <div class="stat">
+            ANY Protocol
+            <strong>1</strong>
+        </div>
+
+        <div class="stat">
+            HIGH Findings
+            <strong class="high">6</strong>
+        </div>
+
+        <div class="stat">
+            MEDIUM Findings
+            <strong class="medium">1</strong>
+        </div>
+
+    </div>
+
+
+    <h2>Security Findings</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Rule</th>
+                <th>Finding</th>
+                <th>Severity</th>
+                <th>Compliance</th>
+                <th>Control</th>
+                <th>Remediation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        <tr>
+            <td>2</td>
+            <td>Broad Source Access</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Network Access Control</td>
+            <td>Replace 0.0.0.0/0 with an approved internal or administrative IP range.</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>Unrestricted Protocol and Port Access</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Least Privilege Network Access</td>
+            <td>Replace 'any' protocol and port with only the protocols and ports required by the application.</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Broad Source Access</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Network Access Control</td>
+            <td>Replace 0.0.0.0/0 with an approved internal or administrative IP range.</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Insecure Service</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Secure Services</td>
+            <td>Disable the insecure service or replace it with a secure alternative such as SSH.</td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>Broad Source Access</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Network Access Control</td>
+            <td>Replace 0.0.0.0/0 with an approved internal or administrative IP range.</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>Duplicate Firewall Rule</td>
+            <td>MEDIUM</td>
+            <td>NON-COMPLIANT</td>
+            <td>Firewall Rule Management</td>
+            <td>Remove the duplicate rule after verifying that the original rule is still required.</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>Conflicting Firewall Rule</td>
+            <td>HIGH</td>
+            <td>NON-COMPLIANT</td>
+            <td>Firewall Rule Management</td>
+            <td>Review the conflicting rules and correct the rule order or remove the unnecessary rule.</td>
+        </tr>
+        
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

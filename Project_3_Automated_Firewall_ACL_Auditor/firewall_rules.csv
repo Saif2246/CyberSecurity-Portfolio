@@ -1,0 +1,13 @@
+rule_id,source,destination,protocol,port,action,description
+1,10.10.0.0/16,10.10.20.5,tcp,443,allow,Internal HTTPS access
+2,0.0.0.0/0,10.10.20.5,tcp,22,allow,Administrative SSH access
+3,10.10.0.0/16,10.10.20.5,udp,53,allow,Internal DNS access
+4,10.10.0.0/16,10.10.20.10,any,any,allow,Application server access
+5,0.0.0.0/0,10.10.20.20,tcp,23,allow,Remote Telnet access
+6,10.10.0.0/16,10.10.20.30,tcp,443,allow,Internal web application
+7,10.10.0.0/16,10.10.20.30,tcp,443,allow,Duplicate HTTPS rule
+8,10.10.0.0/16,10.10.20.40,tcp,22,allow,Internal SSH access
+9,10.10.0.0/16,10.10.20.40,tcp,22,deny,Conflicting SSH rule
+10,10.10.0.0/16,10.10.20.50,udp,123,allow,Internal NTP access
+11,192.168.1.0/24,10.10.20.60,tcp,3306,allow,Database access
+12,0.0.0.0/0,10.10.20.70,icmp,any,allow,Public ICMP access

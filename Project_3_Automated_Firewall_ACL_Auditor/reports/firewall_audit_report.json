@@ -1,0 +1,100 @@
+{
+    "summary": {
+        "total_findings": 7,
+        "high": 6,
+        "medium": 1,
+        "low": 0,
+        "compliant": 0,
+        "non_compliant": 7,
+        "risk_score": 65,
+        "overall_risk": "CRITICAL"
+    },
+    "statistics": {
+        "total_rules": 12,
+        "allow_rules": 11,
+        "deny_rules": 1,
+        "tcp_rules": 8,
+        "udp_rules": 2,
+        "icmp_rules": 1,
+        "any_protocol_rules": 1
+    },
+    "findings": [
+        {
+            "rule_id": "2",
+            "finding": "Broad Source Access",
+            "severity": "HIGH",
+            "reason": "The rule allows traffic from any IPv4 source.",
+            "recommendation": "Restrict the source to approved networks or IP ranges.",
+            "control": "Network Access Control",
+            "requirement": "Network access must be restricted to approved sources.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
+        },
+        {
+            "rule_id": "4",
+            "finding": "Unrestricted Protocol and Port Access",
+            "severity": "HIGH",
+            "reason": "The rule allows any protocol and any destination port.",
+            "recommendation": "Restrict access to only the protocols and ports required by the application.",
+            "control": "Least Privilege Network Access",
+            "requirement": "Only required protocols and ports should be allowed.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Replace 'any' protocol and port with only the protocols and ports required by the application."
+        },
+        {
+            "rule_id": "5",
+            "finding": "Broad Source Access",
+            "severity": "HIGH",
+            "reason": "The rule allows traffic from any IPv4 source.",
+            "recommendation": "Restrict the source to approved networks or IP ranges.",
+            "control": "Network Access Control",
+            "requirement": "Network access must be restricted to approved sources.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
+        },
+        {
+            "rule_id": "5",
+            "finding": "Insecure Service",
+            "severity": "HIGH",
+            "reason": "Telnet is an insecure service that should not normally be exposed.",
+            "recommendation": "Disable Telnet or replace it with a secure alternative.",
+            "control": "Secure Services",
+            "requirement": "Insecure network services should be disabled or replaced.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Disable the insecure service or replace it with a secure alternative such as SSH."
+        },
+        {
+            "rule_id": "12",
+            "finding": "Broad Source Access",
+            "severity": "HIGH",
+            "reason": "The rule allows traffic from any IPv4 source.",
+            "recommendation": "Restrict the source to approved networks or IP ranges.",
+            "control": "Network Access Control",
+            "requirement": "Network access must be restricted to approved sources.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
+        },
+        {
+            "rule_id": "7",
+            "finding": "Duplicate Firewall Rule",
+            "severity": "MEDIUM",
+            "reason": "This rule duplicates Rule 6.",
+            "recommendation": "Remove the duplicate rule after verification.",
+            "control": "Firewall Rule Management",
+            "requirement": "Firewall rules should be unique and properly managed.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Remove the duplicate rule after verifying that the original rule is still required."
+        },
+        {
+            "rule_id": "9",
+            "finding": "Conflicting Firewall Rule",
+            "severity": "HIGH",
+            "reason": "This rule conflicts with Rule 8 because both rules match the same traffic but use different actions.",
+            "recommendation": "Review rule order and remove or correct the conflicting rule.",
+            "control": "Firewall Rule Management",
+            "requirement": "Firewall rules should not contain conflicting actions.",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Review the conflicting rules and correct the rule order or remove the unnecessary rule."
+        }
+    ]
+}

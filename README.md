@@ -1,4 +1,12 @@
 # CyberSecurity Portfolio
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?logo=kalilinux&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-Network_Scanning-4682B4)
+![MariaDB](https://img.shields.io/badge/MariaDB-Database-003545?logo=mariadb&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github&logoColor=white)
+![Network Security](https://img.shields.io/badge/Network-Security-0A66C2)
+![Cloud Security](https://img.shields.io/badge/Cloud-Security-4285F4)
+![GRC](https://img.shields.io/badge/GRC-Governance%20%7C%20Risk%20%7C%20Compliance-6A1B9A)
 
 ## Overview
 

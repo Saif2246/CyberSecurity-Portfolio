@@ -8,6 +8,14 @@ This project demonstrates practical concepts of networking, socket programming, 
 
 ---
 
+## Technical Write-up
+
+Read the complete technical breakdown of this project on DEV Community:
+
+[Read the Full Article on DEV Community](https://dev.to/saif2246/python-network-service-enumeration-tool-security-project-1638)
+
+---
+
 ## Features
 
 

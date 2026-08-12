@@ -50,6 +50,15 @@ The project demonstrates practical concepts in:
 
 ---
 
+## **Technical Write-up**
+
+Read the complete technical breakdown of this project on DEV Community:
+
+[Read the Full Article on DEV Community](https://dev.to/saif2246/firewall-acl-auditor-python-security-toolsecurity-python-linux-networksecurity-458a)
+
+---
+
+
 ## **Security Checks**
 
 The auditor currently performs the following security checks.

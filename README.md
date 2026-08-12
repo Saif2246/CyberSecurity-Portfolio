@@ -1,4 +1,5 @@
 # CyberSecurity Portfolio
+
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?logo=kalilinux&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-Network_Scanning-4682B4)
@@ -8,30 +9,57 @@
 ![Cloud Security](https://img.shields.io/badge/Cloud-Security-4285F4)
 ![GRC](https://img.shields.io/badge/GRC-Governance%20%7C%20Risk%20%7C%20Compliance-6A1B9A)
 
+---
+
 ## Overview
 
 Welcome to my Cyber Security Portfolio.
 
 This repository showcases a collection of hands-on cybersecurity projects developed during my learning journey in Network Security, Cloud Security, Security Operations (SecOps), and Governance, Risk & Compliance (GRC).
 
-## Each project is designed to strengthen practical cybersecurity skills through real-world security assessments, automation, scripting, and defensive security techniques. The portfolio is continuously updated with increasingly advanced projects as I progress toward becoming a Cloud Security & GRC Professional.
+**Each project is designed to strengthen practical cybersecurity skills through real-world security assessments, automation, scripting, and defensive security techniques. The portfolio is continuously updated with increasingly advanced projects as I progress toward becoming a Cloud Security & GRC Professional.**
+
+---
 
 ## Projects
 
 This section showcases completed and planned cybersecurity projects developed as part of my learning journey in Network Security, Cloud Security, Security Operations (SecOps), and Governance, Risk & Compliance (GRC).
 
-| Project                                                                                             | Status      | Technologies                                                    | Focus Area                                                      |
-| --------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
-| [Network Reconnaissance & Database Analyzer](./Project_1_Network_Reconnaissance_Database_Analyzer/) | ✅ Completed | Python, Nmap, XML Parsing, MariaDB, Linux                       | Network Reconnaissance, Nmap Analysis, Security Data Processing |
-| [Network Service Enumeration Tool](./Project_2_Service_Enumeration/)                                | ✅ Completed | Python, Socket Programming, Multithreading, MariaDB, Kali Linux | TCP Scanning, Service Identification, Banner Grabbing           |
-| [Automated Firewall & ACL Rule Auditor](./Project_3_Automated_Firewall_ACL_Auditor/)                | ✅ Completed | Python, Firewall Concepts, Networking, JSON, HTML               | Firewall Security, Rule Analysis, Risk Assessment & Compliance  |
-| SecOps Log Aggregation & Threat Dashboard                                                           | ⏳ Planned   | Python, Log Analysis, SIEM Concepts                             | Security Monitoring & Threat Detection                          |
-| Cloud IAM Privilege Escalation & Access Auditor                                                     | ⏳ Planned   | AWS IAM, Python, Cloud Security                                 | Identity & Access Management Security                           |
-| Cloud Asset Vulnerability Risk Scorer                                                               | ⏳ Planned   | Python, Cloud Security, Risk Analysis                           | Cloud Asset Risk Assessment                                     |
-| DevSecOps Terraform Infrastructure Security Scanner                                                 | ⏳ Planned   | Terraform, Python, DevSecOps                                    | Infrastructure Security Automation                              |
-| AWS CloudTrail Analytics & Threat Detection Engine                                                  | ⏳ Planned   | AWS CloudTrail, Python, Cloud Security                          | Cloud Threat Detection                                          |
-| Automated CIS/NIST Cloud Compliance Mapper                                                          | ⏳ Planned   | Python, CIS, NIST Frameworks                                    | Compliance Automation                                           |
-| Enterprise GRC Risk Assessment Platform                                                             | ⏳ Planned   | Python, Risk Management, GRC Concepts                           | Enterprise Risk & Audit Automation                              |
+| Project | Status | Technologies | Focus Area |
+|---|---|---|---|
+| [Network Reconnaissance & Database Analyzer](./Project_1_Network_Reconnaissance_Database_Analyzer/) | ✅ Completed | Python, Nmap, XML Parsing, MariaDB, Linux | Network Reconnaissance, Nmap Analysis, Security Data Processing |
+| [Network Service Enumeration Tool](./Project_2_Service_Enumeration/) | ✅ Completed | Python, Socket Programming, Multithreading, MariaDB, Kali Linux | TCP Scanning, Service Identification, Banner Grabbing |
+| [Automated Firewall & ACL Rule Auditor](./Project_3_Automated_Firewall_ACL_Auditor/) | ✅ Completed | Python, Firewall & ACL Auditing, JSON, HTML, Tkinter, Kali Linux | Firewall Security, Rule Analysis, Risk Assessment, Compliance & Security Automation |
+| SecOps Log Aggregation & Threat Dashboard | ⏳ Planned | Python, Log Analysis, SIEM Concepts | Security Monitoring & Threat Detection |
+| Cloud IAM Privilege Escalation & Access Auditor | ⏳ Planned | AWS IAM, Python, Cloud Security | Identity & Access Management Security |
+| Cloud Asset Vulnerability Risk Scorer | ⏳ Planned | Python, Cloud Security, Risk Analysis | Cloud Asset Risk Assessment |
+| DevSecOps Terraform Infrastructure Security Scanner | ⏳ Planned | Terraform, Python, DevSecOps | Infrastructure Security Automation |
+| AWS CloudTrail Analytics & Threat Detection Engine | ⏳ Planned | AWS CloudTrail, Python, Cloud Security | Cloud Threat Detection |
+| Automated CIS/NIST Cloud Compliance Mapper | ⏳ Planned | Python, CIS, NIST Frameworks | Compliance Automation |
+| Enterprise GRC Risk Assessment Platform | ⏳ Planned | Python, Risk Management, GRC Concepts | Enterprise Risk & Audit Automation |
+
+### Project 3 Highlights
+
+- Automated Firewall and ACL Rule Auditing
+- Broad Source Access Detection
+- Unrestricted Protocol and Port Detection
+- Insecure Service Detection
+- Duplicate Firewall Rule Detection
+- Conflicting Firewall Rule Detection
+- Security Severity Classification
+- Compliance Status Evaluation
+- Security Control Mapping
+- Requirement Mapping
+- Risk Score Calculation
+- Overall Risk Classification
+- Firewall Rule Statistics
+- Remediation Recommendations
+- JSON Security Report Generation
+- Professional HTML Security Dashboard
+- Tkinter-based Interactive Security Auditor GUI
+- Finding Details Viewer
+- CSV Firewall Rule Dataset Support
+- Automated Security Reporting
 
 ---
 
@@ -39,46 +67,48 @@ This section showcases completed and planned cybersecurity projects developed as
 
 ### Programming Languages
 
-* Python
-* Java
-* C++
+- Python
+- Java
+- C++
 
 ### Security & Networking
 
-* TCP/IP Networking
-* Socket Programming
-* Nmap
-* Port Scanning
-* Service Enumeration
-* Network Reconnaissance
-* Banner Grabbing
-* TCP/UDP Protocol Analysis
-* Firewall & ACL Concepts
-* DNS & DHCP Fundamentals
-* Network Security Assessment
-* Firewall Rule Auditing
-* Security Risk Analysis
+- TCP/IP Networking
+- Socket Programming
+- Nmap
+- Port Scanning
+- Service Enumeration
+- Network Reconnaissance
+- Banner Grabbing
+- TCP/UDP Protocol Analysis
+- Firewall & ACL Concepts
+- DNS & DHCP Fundamentals
+- Network Security Assessment
+- Firewall Rule Auditing
+- Security Risk Analysis
+- Security Automation
+- Compliance Assessment
 
 ### Operating Systems & Tools
 
-* Kali Linux
-* Linux Environment
-* Git & GitHub
-* VS Code
+- Kali Linux
+- Linux Environment
+- Git & GitHub
+- VS Code
 
 ### Databases
 
-* MariaDB
-* MySQL
-* Database Integration
+- MariaDB
+- MySQL
+- Database Integration
 
 ### Cloud & Security Domains
 
-* Cloud Security Fundamentals
-* Identity and Access Management (IAM)
-* Security Operations (SecOps)
-* Governance, Risk & Compliance (GRC)
-* Security Automation
+- Cloud Security Fundamentals
+- Identity and Access Management (IAM)
+- Security Operations (SecOps)
+- Governance, Risk & Compliance (GRC)
+- Security Automation
 
 ---
 
@@ -91,7 +121,7 @@ CyberSecurity-Portfolio/
 │   ├── parser.py
 │   ├── scan_result.xml
 │   ├── README.md
-│   └── Screenshots
+│   └── screenshots/
 │
 ├── Project_2_Service_Enumeration/
 │   ├── scanner.py
@@ -102,14 +132,20 @@ CyberSecurity-Portfolio/
 │
 ├── Project_3_Automated_Firewall_ACL_Auditor/
 │   ├── data/
-│   ├── firewall_rules.csv
+│   │   └── firewall_rules.csv
 │   ├── reports/
 │   │   ├── firewall_audit_report.json
 │   │   └── firewall_audit_report.html
 │   ├── screenshots/
 │   │   ├── terminal-audit.png
-│   │   └── html-dashboard.png
+│   │   ├── html-dashboard.png
+│   │   └── gui-dashboard.png
 │   ├── src/
+│   │   ├── analyzer.py
+│   │   ├── parser.py
+│   │   ├── report_generator.py
+│   │   ├── html_report.py
+│   │   └── gui.py
 │   └── README.md
 │
 └── README.md
@@ -121,49 +157,57 @@ CyberSecurity-Portfolio/
 
 ### Programming & Automation
 
-* Python Security Automation
-* Socket Programming
-* Multithreading Implementation
-* Command Line Tool Development
-* Modular Python Development
-* JSON Processing
-* Automated Report Generation
+- Python Security Automation
+- Socket Programming
+- Multithreading Implementation
+- Command Line Tool Development
+- Modular Python Development
+- JSON Processing
+- CSV Processing
+- File Handling
+- Exception Handling
+- GUI Development with Tkinter
+- Automated Report Generation
 
 ### Network Security
 
-* TCP/IP Networking
-* Network Reconnaissance
-* Port Scanning Techniques
-* Service Enumeration
-* Banner Grabbing
-* Firewall & ACL Rule Analysis
-* Firewall Misconfiguration Detection
-* Security Assessment Workflow
-* Network Access Control Analysis
+- TCP/IP Networking
+- Network Reconnaissance
+- Port Scanning Techniques
+- Service Enumeration
+- Banner Grabbing
+- Firewall & ACL Rule Analysis
+- Firewall Misconfiguration Detection
+- Security Assessment Workflow
+- Network Access Control Analysis
+- Least Privilege
+- Firewall Rule Management
 
 ### System & Database Skills
 
-* Linux Security Environment
-* Kali Linux Usage
-* MariaDB Database Integration
-* Security Data Storage & Analysis
-* JSON Security Reporting
-* HTML Security Reporting
+- Linux Security Environment
+- Kali Linux Usage
+- MariaDB Database Integration
+- Security Data Storage & Analysis
+- JSON Security Reporting
+- HTML Security Reporting
 
 ### Security Engineering Concepts
 
-* Defensive Security Practices
-* Security Report Generation
-* Security Tool Development
-* Automation for Security Operations
-* Security Risk Scoring
-* Security Finding Classification
-* Compliance Assessment
-* Security Remediation
-* Least Privilege
-* Firewall Rule Management
-
----
+- Defensive Security Practices
+- Security Report Generation
+- Security Tool Development
+- Automation for Security Operations
+- Security Risk Scoring
+- Security Finding Classification
+- Compliance Assessment
+- Security Control Mapping
+- Requirement Mapping
+- Security Remediation
+- Firewall Rule Auditing
+- Automated Firewall & ACL Auditing
+- Risk-Based Security Assessment
+- Interactive Security Audit GUI
 
 ---
 
@@ -171,15 +215,15 @@ CyberSecurity-Portfolio/
 
 The following projects are planned to expand my skills in Cloud Security, Security Operations (SecOps), DevSecOps, and Governance, Risk & Compliance (GRC).
 
-| Phase   | Project                                            | Objective                                               |
-| ------- | -------------------------------------------------- | ------------------------------------------------------- |
-| Phase 1 | SecOps Log Aggregation & Threat Dashboard          | Collect and analyze security logs for threat monitoring |
-| Phase 2 | Cloud IAM Privilege Escalation & Access Auditor    | Identify IAM risks and excessive permissions            |
-| Phase 3 | Cloud Asset Vulnerability Risk Scorer              | Assess cloud asset security risks                       |
-| Phase 4 | Terraform Infrastructure Security Scanner          | Detect Infrastructure-as-Code security issues           |
+| Phase | Project | Objective |
+|---|---|---|
+| Phase 1 | SecOps Log Aggregation & Threat Dashboard | Collect and analyze security logs for threat monitoring |
+| Phase 2 | Cloud IAM Privilege Escalation & Access Auditor | Identify IAM risks and excessive permissions |
+| Phase 3 | Cloud Asset Vulnerability Risk Scorer | Assess cloud asset security risks |
+| Phase 4 | Terraform Infrastructure Security Scanner | Detect Infrastructure-as-Code security issues |
 | Phase 5 | AWS CloudTrail Analytics & Threat Detection Engine | Monitor cloud activity and identify suspicious behavior |
-| Phase 6 | Automated CIS/NIST Cloud Compliance Mapper         | Automate security compliance assessment                 |
-| Phase 7 | Enterprise GRC Risk Assessment Platform            | Build automated risk assessment and audit workflow      |
+| Phase 6 | Automated CIS/NIST Cloud Compliance Mapper | Automate security compliance assessment |
+| Phase 7 | Enterprise GRC Risk Assessment Platform | Build automated risk assessment and audit workflow |
 
 ---
 
@@ -189,14 +233,16 @@ The main objective of this portfolio is to develop practical and industry-releva
 
 My learning focus areas include:
 
-* Cloud Security Engineering
-* Security Operations (SecOps)
-* Governance, Risk & Compliance (GRC)
-* Security Automation & Tool Development
-* Identity and Access Management (IAM)
-* Security Monitoring and Risk Assessment
+- Cloud Security Engineering
+- Security Operations (SecOps)
+- Governance, Risk & Compliance (GRC)
+- Security Automation & Tool Development
+- Identity and Access Management (IAM)
+- Security Monitoring and Risk Assessment
 
 Through these projects, I aim to strengthen my ability to design, analyze, and improve security solutions following real-world security practices.
+
+---
 
 ## Author
 
@@ -208,16 +254,16 @@ Aspiring Cloud Security & GRC Professional
 
 ### Areas of Interest
 
-* Cloud Security
-* Security Operations (SecOps)
-* Governance, Risk & Compliance (GRC)
-* Network Security
-* Security Automation
+- Cloud Security
+- Security Operations (SecOps)
+- Governance, Risk & Compliance (GRC)
+- Network Security
+- Security Automation
 
 ### Profiles
 
-* GitHub: https://github.com/Saif2246
-* LinkedIn: https://www.linkedin.com/in/saif-ali-a22230409/
+- GitHub: [Saif2246](https://github.com/Saif2246)
+- LinkedIn: [saif-ali-a22230409](https://www.linkedin.com/in/saif-ali-a22230409/)
 
 ---
 
@@ -235,15 +281,17 @@ The purpose of this portfolio is to demonstrate cybersecurity learning, defensiv
 
 This repository is licensed under the MIT License.
 
-## You are free to use, modify, and distribute the code for educational and authorized purposes.
+You are free to use, modify, and distribute the code for educational and authorized purposes.
+
+---
 
 ## Current Learning Focus
 
 Currently improving skills in:
 
-* Advanced Network Security
-* Cloud Security Architecture
-* AWS Security Fundamentals
-* IAM Security
-* Security Monitoring
-* GRC Frameworks (NIST, CIS, SOC 2)
+- Advanced Network Security
+- Cloud Security Architecture
+- AWS Security Fundamentals
+- IAM Security
+- Security Monitoring
+- GRC Frameworks (NIST, CIS, SOC 2)

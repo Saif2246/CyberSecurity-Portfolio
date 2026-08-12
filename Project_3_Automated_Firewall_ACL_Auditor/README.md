@@ -1,43 +1,60 @@
 # Automated Firewall & ACL Auditor
 
-## Project Overview
+## **Project Overview**
 
-Automated Firewall & ACL Auditor is a Python-based security auditing tool designed to analyze firewall and Access Control List (ACL) rules, identify security weaknesses, evaluate compliance, calculate an overall risk score, and generate structured security audit reports.
+Automated Firewall & ACL Auditor is a Python-based security auditing tool designed to automatically analyze Firewall and Access Control List (ACL) rules, identify security weaknesses, evaluate compliance, calculate risk, and generate structured security audit reports.
 
-The project simulates a practical enterprise firewall rule auditing workflow by automatically detecting overly permissive access, insecure services, duplicate rules, and conflicting firewall policies.
+The project simulates a practical enterprise firewall auditing workflow by detecting common security issues such as overly permissive access, unrestricted protocols and ports, insecure services, duplicate rules, and conflicting firewall policies.
 
-This project demonstrates practical concepts in **Network Security, Firewall Auditing, Least Privilege, Security Controls, Compliance Assessment, Risk Scoring, and Automated Security Reporting**.
+The project demonstrates practical concepts in:
 
----
-
-## Features
-
-* Automated Firewall Rule Analysis
-* ACL Security Assessment
-* Broad Source Access Detection
-* Unrestricted Protocol & Port Detection
-* Insecure Service Detection
-* Duplicate Firewall Rule Detection
-* Conflicting Firewall Rule Detection
-* Security Severity Classification
-* Compliance Control Mapping
-* Remediation Recommendations
-* Automated Risk Scoring
-* Overall Risk Classification
-* Firewall Rule Statistics
-* JSON Security Report Generation
-* Professional HTML Security Dashboard
-* Modular Python Architecture
-* Exception Handling
-* Automated Report Storage
+- Network Security
+- Firewall Security
+- ACL Auditing
+- Least Privilege
+- Network Access Control
+- Security Controls
+- Compliance Assessment
+- Risk Assessment
+- Security Automation
+- Security Reporting
+- GRC-oriented Security Analysis
 
 ---
 
-## Security Checks
+## **Key Features**
 
-The auditor currently performs the following security checks:
+- Automated Firewall Rule Analysis
+- ACL Security Assessment
+- Broad Source Access Detection
+- Unrestricted Protocol Detection
+- Unrestricted Port Detection
+- Insecure Service Detection
+- Duplicate Rule Detection
+- Conflicting Rule Detection
+- Security Severity Classification
+- Compliance Status Evaluation
+- Security Control Mapping
+- Requirement Mapping
+- Risk Score Calculation
+- Overall Risk Classification
+- Firewall Rule Statistics
+- Remediation Recommendations
+- JSON Report Generation
+- HTML Security Dashboard
+- Tkinter Security Auditor GUI
+- Finding Details Viewer
+- CSV Rule Dataset Support
+- Modular Python Architecture
+- Exception Handling
 
-### 1. Broad Source Access
+---
+
+## **Security Checks**
+
+The auditor currently performs the following security checks.
+
+### **1. Broad Source Access**
 
 Detects firewall rules that allow traffic from any IPv4 source:
 
@@ -45,13 +62,23 @@ Detects firewall rules that allow traffic from any IPv4 source:
 0.0.0.0/0
 ```
 
+This represents unrestricted IPv4 source access.
+
 **Severity:** HIGH
+
+**Security Concern:**
+
+Allowing traffic from any source can unnecessarily expose a service or network resource.
+
+**Recommended Approach:**
+
+Restrict the source to an approved IP address, subnet, or administrative network.
 
 ---
 
-### 2. Unrestricted Protocol and Port Access
+### **2. Unrestricted Protocol and Port Access**
 
-Detects rules that allow:
+Detects rules where both protocol and port are unrestricted:
 
 ```text
 Protocol: any
@@ -60,32 +87,56 @@ Port: any
 
 **Severity:** HIGH
 
+**Security Concern:**
+
+Allowing any protocol and any port creates an overly permissive network access rule.
+
+**Recommended Approach:**
+
+Allow only the required protocols and ports.
+
 ---
 
-### 3. Insecure Services
+### **3. Insecure Services**
 
-Detects insecure services such as:
+Detects commonly insecure services such as:
 
 ```text
-FTP   → Port 21
-Telnet → Port 23
+FTP     → Port 21
+Telnet  → Port 23
 ```
 
 **Severity:** HIGH
 
+**Security Concern:**
+
+Legacy services such as Telnet transmit sensitive information without adequate encryption.
+
+**Recommended Approach:**
+
+Disable unnecessary insecure services or replace them with secure alternatives such as SSH.
+
 ---
 
-### 4. Duplicate Firewall Rules
+### **4. Duplicate Firewall Rules**
 
-Detects multiple rules containing the same traffic criteria and action.
+Detects multiple firewall rules containing the same traffic criteria and action.
 
 **Severity:** MEDIUM
 
+**Security Concern:**
+
+Duplicate rules can make firewall policies harder to maintain and audit.
+
+**Recommended Approach:**
+
+Review duplicate rules and remove unnecessary entries.
+
 ---
 
-### 5. Conflicting Firewall Rules
+### **5. Conflicting Firewall Rules**
 
-Detects rules that match the same traffic but use different actions such as:
+Detects rules that match the same traffic but use different actions, such as:
 
 ```text
 ALLOW
@@ -94,21 +145,29 @@ DENY
 
 **Severity:** HIGH
 
+**Security Concern:**
+
+Conflicting rules can create unexpected firewall behavior depending on rule order and implementation.
+
+**Recommended Approach:**
+
+Review the conflicting rules and correct the policy or rule ordering.
+
 ---
 
-## Risk Assessment
+## **Risk Assessment**
 
-The auditor assigns severity levels to identified findings:
+The auditor classifies findings according to severity.
 
-| Severity | Description                                         |
-| -------- | --------------------------------------------------- |
-| HIGH     | Significant security weakness requiring attention   |
-| MEDIUM   | Security or configuration weakness requiring review |
-| LOW      | Minor security or configuration issue               |
+| Severity | Description |
+|---|---|
+| HIGH | Significant security weakness requiring attention |
+| MEDIUM | Security or configuration weakness requiring review |
+| LOW | Minor security or configuration issue |
 
-The project also calculates an overall **Risk Score** and assigns an overall risk level.
+The tool also calculates a numerical **Risk Score** and determines an overall risk level.
 
-Example:
+### **Example Audit Result**
 
 ```text
 Total Findings: 7
@@ -120,63 +179,29 @@ Risk Score: 65
 Overall Risk: CRITICAL
 ```
 
----
-
-## Compliance Mapping
-
-Security findings are mapped to security controls and requirements.
-
-Examples include:
-
-| Finding                               | Control                        |
-| ------------------------------------- | ------------------------------ |
-| Broad Source Access                   | Network Access Control         |
-| Unrestricted Protocol and Port Access | Least Privilege Network Access |
-| Insecure Service                      | Secure Services                |
-| Duplicate Firewall Rule               | Firewall Rule Management       |
-| Conflicting Firewall Rule             | Firewall Rule Management       |
-
-This allows the project to move beyond simple vulnerability detection toward a basic **GRC-oriented security assessment workflow**.
+The risk score is generated from the findings identified during the audit.
 
 ---
 
-## Technologies Used
+## **Compliance Assessment**
 
-### Programming Language
+Each security finding can be associated with a security control, requirement, and compliance status.
 
-* Python 3
+### **Example Control Mapping**
 
-### Operating System
+| Security Finding | Security Control |
+|---|---|
+| Broad Source Access | Network Access Control |
+| Unrestricted Protocol/Port | Least Privilege Network Access |
+| Insecure Service | Secure Services |
+| Duplicate Rule | Firewall Rule Management |
+| Conflicting Rule | Firewall Rule Management |
 
-* Kali Linux
-
-### Data Format
-
-* CSV
-* JSON
-* HTML
-
-### Python Libraries
-
-* pathlib
-* csv
-* json
-
-### Security Concepts
-
-* Firewall Security
-* ACL Auditing
-* Network Access Control
-* Least Privilege
-* Secure Services
-* Rule Management
-* Compliance Assessment
-* Risk Scoring
-* Security Remediation
+This allows the project to move beyond basic vulnerability detection toward a **GRC-oriented security assessment workflow**.
 
 ---
 
-## Project Workflow
+## **Project Workflow**
 
 ```text
 Firewall / ACL Rules
@@ -203,7 +228,10 @@ Generate Security Findings
 Map Findings to Controls
         │
         ▼
-Generate Remediation Guidance
+Evaluate Compliance
+        │
+        ▼
+Generate Recommendations
         │
         ▼
 Calculate Risk Score
@@ -212,13 +240,13 @@ Calculate Risk Score
 Generate Rule Statistics
         │
         ├── JSON Report
-        │
-        └── HTML Dashboard
+        ├── HTML Dashboard
+        └── Tkinter GUI
 ```
 
 ---
 
-## Project Structure
+## **Project Structure**
 
 ```text
 Project_3_Automated_Firewall_ACL_Auditor/
@@ -232,45 +260,106 @@ Project_3_Automated_Firewall_ACL_Auditor/
 │
 ├── screenshots/
 │   ├── terminal-audit.png
-│   └── html-dashboard.png
+│   ├── html-dashboard.png
+│   └── gui-dashboard.png
 │
 ├── src/
 │   ├── analyzer.py
 │   ├── parser.py
 │   ├── report_generator.py
-│   └── html_report.py
+│   ├── html_report.py
+│   └── gui.py
 │
-├── firewall_rules.csv
 └── README.md
 ```
 
 ---
 
-## Installation
+## **Technologies Used**
 
-### 1. Clone the Repository
+### **Programming Language**
+
+- Python 3
+
+### **Operating System**
+
+- Kali Linux
+
+### **Data Formats**
+
+- CSV
+- JSON
+- HTML
+
+### **Python Standard Libraries**
+
+- `csv`
+- `json`
+- `pathlib`
+- `subprocess`
+- `threading`
+- `webbrowser`
+- `tkinter`
+
+### **Security Concepts**
+
+- Firewall Security
+- ACL Auditing
+- Network Access Control
+- Least Privilege
+- Secure Services
+- Firewall Rule Management
+- Compliance Assessment
+- Risk Assessment
+- Security Remediation
+- Security Automation
+
+---
+
+## **Installation**
+
+### **1. Clone the Portfolio Repository**
 
 ```bash
 git clone https://github.com/Saif2246/CyberSecurity-Portfolio.git
 ```
 
-### 2. Navigate to the Project
+### **2. Navigate to Project 3**
 
 ```bash
 cd CyberSecurity-Portfolio/Project_3_Automated_Firewall_ACL_Auditor
 ```
 
-### 3. Verify the Project Structure
+### **3. Verify Project Files**
 
 ```bash
-ls -lh
+find . -maxdepth 2 -type f | sort
+```
+
+Expected structure:
+
+```text
+./README.md
+./data/firewall_rules.csv
+./reports/firewall_audit_report.html
+./reports/firewall_audit_report.json
+./screenshots/gui-dashboard.png
+./screenshots/html-dashboard.png
+./screenshots/terminal-audit.png
+./src/analyzer.py
+./src/gui.py
+./src/html_report.py
+./src/parser.py
+./src/report_generator.py
 ```
 
 ---
 
-## Usage
+## **Usage**
 
-### Run the Security Auditor
+### **1. Run the Security Analyzer**
+
+From the project root:
 
 ```bash
 python3 src/analyzer.py
@@ -278,18 +367,138 @@ python3 src/analyzer.py
 
 The analyzer will:
 
-* Parse the firewall rule dataset
-* Audit all firewall rules
-* Detect security findings
-* Map findings to security controls
-* Generate remediation recommendations
-* Calculate the risk score
-* Generate the JSON report
-* Display the audit summary
+- Read the firewall rule dataset
+- Parse firewall rules
+- Perform security checks
+- Generate security findings
+- Evaluate compliance
+- Calculate the risk score
+- Generate the JSON report
+- Display the audit summary
 
 ---
 
-## Sample Audit Output
+### **2. View the Audit Summary**
+
+After running the analyzer:
+
+```bash
+python3 -c "import json; r=json.load(open('reports/firewall_audit_report.json')); print(r.get('summary', {}))"
+```
+
+Example:
+
+```text
+{
+    'total_findings': 7,
+    'high': 6,
+    'medium': 1,
+    'low': 0,
+    'compliant': 0,
+    'non_compliant': 7,
+    'risk_score': 65,
+    'overall_risk': 'CRITICAL'
+}
+```
+
+---
+
+### **3. View Rule Statistics**
+
+```bash
+python3 -c "import json; r=json.load(open('reports/firewall_audit_report.json')); print(r.get('statistics', {}))"
+```
+
+Example:
+
+```text
+{
+    'total_rules': 12,
+    'allow_rules': 11,
+    'deny_rules': 1,
+    'tcp_rules': 8,
+    'udp_rules': 2,
+    'icmp_rules': 1,
+    'any_protocol_rules': 1
+}
+```
+
+---
+
+## **Generate HTML Security Dashboard**
+
+Run:
+
+```bash
+python3 src/html_report.py
+```
+
+Expected output:
+
+```text
+HTML report saved to:
+reports/firewall_audit_report.html
+```
+
+Open the dashboard:
+
+```bash
+xdg-open reports/firewall_audit_report.html
+```
+
+The HTML dashboard provides a visual representation of the firewall security assessment.
+
+It includes:
+
+- Total Rules
+- Total Findings
+- Risk Score
+- Overall Risk
+- Allow Rules
+- Deny Rules
+- TCP Rules
+- UDP Rules
+- ICMP Rules
+- Any Protocol Rules
+- Severity Summary
+- Security Findings
+- Compliance Status
+- Security Controls
+- Remediation Guidance
+
+---
+
+## **Run the GUI Security Auditor**
+
+The project also includes a Tkinter-based graphical interface.
+
+Run:
+
+```bash
+python3 src/gui.py
+```
+
+The GUI provides:
+
+- CSV file selection
+- Security audit execution
+- Security overview
+- Rules audited
+- Total findings
+- Risk score
+- Overall risk
+- HIGH / MEDIUM / LOW summary
+- Compliant / Non-Compliant counts
+- Firewall rule statistics
+- Security findings table
+- Finding details window
+- HTML report access
+
+The GUI automatically executes the analyzer and loads the generated JSON report.
+
+---
+
+## **Sample Audit Output**
 
 ```text
 JSON report saved to:
@@ -322,32 +531,9 @@ ANY Protocol Rules: 1
 
 ---
 
-## Generate HTML Security Dashboard
+## **JSON Security Report**
 
-Run:
-
-```bash
-python3 src/html_report.py
-```
-
-Expected output:
-
-```text
-HTML report saved to:
-reports/firewall_audit_report.html
-```
-
-Open the dashboard in Kali Linux:
-
-```bash
-xdg-open reports/firewall_audit_report.html
-```
-
----
-
-## JSON Report
-
-The analyzer automatically generates:
+The analyzer generates:
 
 ```text
 reports/firewall_audit_report.json
@@ -355,19 +541,20 @@ reports/firewall_audit_report.json
 
 The report contains:
 
-* Security summary
-* Risk score
-* Overall risk
-* Firewall statistics
-* Security findings
-* Severity
-* Compliance status
-* Security controls
-* Requirements
-* Recommendations
-* Remediation guidance
+- Security summary
+- Risk score
+- Overall risk
+- Firewall statistics
+- Security findings
+- Severity
+- Compliance status
+- Security controls
+- Requirements
+- Reasons
+- Recommendations
+- Remediation guidance
 
-Example structure:
+### **Example Structure**
 
 ```json
 {
@@ -396,9 +583,9 @@ Example structure:
 
 ---
 
-## View JSON Report
+## **View JSON Report**
 
-To inspect the generated report:
+To inspect the complete report:
 
 ```bash
 cat reports/firewall_audit_report.json
@@ -412,69 +599,55 @@ python3 -c "import json; r=json.load(open('reports/firewall_audit_report.json'))
 
 ---
 
-## HTML Security Dashboard
+## **Screenshots**
 
-The generated HTML dashboard provides a human-readable representation of the security assessment.
+### **1. Terminal Security Audit**
 
-It displays:
-
-* Total Rules
-* Total Findings
-* Risk Score
-* Overall Risk
-* Allow Rules
-* Deny Rules
-* TCP Rules
-* UDP Rules
-* ICMP Rules
-* Any Protocol Rules
-* High Findings
-* Medium Findings
-* Detailed Security Findings
-* Compliance Status
-* Security Controls
-* Remediation Guidance
-
----
-
-## Screenshots
-
-### 1. Terminal Security Audit
+The terminal screenshot demonstrates the command-line execution of the automated firewall audit, including security findings, severity classification, compliance status, risk score, and rule statistics.
 
 ![Terminal Security Audit](screenshots/terminal-audit.png)
 
-The terminal output demonstrates the automated firewall analysis, risk score, rule statistics, security findings, compliance status, and remediation recommendations.
-
 ---
 
-### 2. HTML Security Dashboard
+### **2. HTML Security Dashboard**
+
+The HTML dashboard provides a visual security assessment containing risk information, firewall statistics, security findings, compliance information, and remediation guidance.
 
 ![HTML Security Dashboard](screenshots/html-dashboard.png)
 
-The HTML dashboard provides a professional visual representation of the firewall security assessment and identified findings.
+---
+
+### **3. GUI Security Dashboard**
+
+The Tkinter GUI provides an interactive interface for running the firewall audit, viewing security metrics, reviewing findings, and opening the generated HTML report.
+
+![GUI Security Dashboard](screenshots/gui-dashboard.png)
 
 ---
 
-## Real-World Problem Solved
+## **Real-World Problem Solved**
 
-In real enterprise environments, firewalls and ACLs may contain hundreds or thousands of rules.
+Enterprise firewalls and ACLs can contain hundreds or thousands of rules.
 
-Manually reviewing these rules can be:
+Manually reviewing large firewall rule sets can be:
 
-* Time-consuming
-* Error-prone
-* Difficult to maintain
-* Difficult to audit consistently
+- Time-consuming
+- Error-prone
+- Difficult to maintain
+- Difficult to audit consistently
+- Difficult to identify security weaknesses quickly
 
-This project addresses that problem by automatically analyzing firewall rules and identifying common security weaknesses.
+This project automates the initial security review by analyzing firewall rules and identifying common configuration weaknesses.
 
-For example, it can detect:
+For example, the tool can detect:
 
 ```text
 0.0.0.0/0
 ```
 
-which represents unrestricted IPv4 source access, or:
+which represents unrestricted IPv4 source access.
+
+It can also detect:
 
 ```text
 protocol = any
@@ -483,13 +656,21 @@ port = any
 
 which may provide unnecessarily broad network access.
 
-The tool therefore helps security teams identify **overly permissive, insecure, duplicate, or conflicting firewall rules** before they become security risks.
+The tool therefore helps security teams identify:
+
+- Overly permissive rules
+- Insecure services
+- Duplicate rules
+- Conflicting rules
+- Non-compliant configurations
+
+before they become larger security or operational risks.
 
 ---
 
-## Example Findings
+## **Example Findings**
 
-### Broad Source Access
+### **Broad Source Access**
 
 ```text
 Rule 2: Broad Source Access
@@ -503,7 +684,7 @@ Remediation:
 Replace 0.0.0.0/0 with an approved internal or administrative IP range.
 ```
 
-### Insecure Service
+### **Insecure Service**
 
 ```text
 Rule 5: Insecure Service
@@ -517,7 +698,7 @@ Remediation:
 Disable the insecure service or replace it with a secure alternative such as SSH.
 ```
 
-### Conflicting Rule
+### **Conflicting Rule**
 
 ```text
 Rule 9: Conflicting Firewall Rule
@@ -525,8 +706,8 @@ Severity: HIGH
 Compliance: NON-COMPLIANT
 
 Reason:
-The rule conflicts with Rule 8 because both rules match
-the same traffic but use different actions.
+The rule conflicts with another rule because both rules
+match the same traffic but use different actions.
 
 Remediation:
 Review the conflicting rules and correct the rule order
@@ -535,108 +716,114 @@ or remove the unnecessary rule.
 
 ---
 
-## Learning Outcomes
+## **Learning Outcomes**
 
-Through this project, I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
-* Firewall Rule Auditing
-* ACL Security Analysis
-* Network Access Control
-* Least Privilege
-* Security Control Mapping
-* Compliance Assessment
-* Risk Scoring
-* Security Finding Classification
-* Remediation Development
-* JSON Report Generation
-* HTML Report Generation
-* Python Modular Development
-* CSV Data Processing
-* Exception Handling
-* Security Automation
-
----
-
-## Skills Demonstrated
-
-### Cybersecurity
-
-* Firewall Security
-* ACL Auditing
-* Network Security
-* Security Assessment
-* Security Controls
-* Least Privilege
-* Secure Service Analysis
-* Security Remediation
-
-### GRC
-
-* Compliance Mapping
-* Control Identification
-* Requirement Mapping
-* Risk Assessment
-* Risk Scoring
-* Non-Compliance Identification
-* Audit Reporting
-
-### Programming
-
-* Python
-* Modular Programming
-* File Handling
-* CSV Processing
-* JSON Processing
-* Exception Handling
-* Automated Reporting
-
-### Reporting
-
-* Structured JSON Reports
-* HTML Security Dashboards
-* Security Finding Reports
-* Risk Summaries
-* Remediation Reports
+- Firewall Rule Auditing
+- ACL Security Analysis
+- Network Access Control
+- Least Privilege
+- Security Control Mapping
+- Compliance Assessment
+- Risk Assessment
+- Risk Scoring
+- Security Finding Classification
+- Security Remediation
+- JSON Report Generation
+- HTML Report Generation
+- GUI Development with Tkinter
+- Python Modular Development
+- CSV Data Processing
+- Exception Handling
+- Security Automation
 
 ---
 
-## Future Improvements
+## **Skills Demonstrated**
 
-Future versions of this project may include:
+### **Cybersecurity**
 
-* Enterprise Firewall Configuration Parsing
-* Cisco ACL Support
-* AWS Security Group Auditing
-* Azure Network Security Group Auditing
-* Cloud Firewall Auditing
-* Rule Shadowing Detection
-* Unused Rule Detection
-* Overlapping CIDR Detection
-* Rule Expiration Detection
-* CVSS-Based Risk Scoring
-* NIST Control Mapping
-* CIS Benchmark Mapping
-* CSV/PDF Report Export
-* Database Storage
-* REST API Integration
-* SIEM Integration
-* Enterprise GRC Dashboard
+- Firewall Security
+- ACL Auditing
+- Network Security
+- Security Assessment
+- Security Controls
+- Least Privilege
+- Secure Service Analysis
+- Security Remediation
+
+### **GRC**
+
+- Compliance Mapping
+- Control Identification
+- Requirement Mapping
+- Risk Assessment
+- Risk Scoring
+- Non-Compliance Identification
+- Audit Reporting
+
+### **Programming**
+
+- Python
+- Modular Programming
+- File Handling
+- CSV Processing
+- JSON Processing
+- Exception Handling
+- Threading
+- GUI Development
+- Automated Reporting
+
+### **Reporting**
+
+- Structured JSON Reports
+- HTML Security Dashboards
+- Interactive GUI Dashboard
+- Security Finding Reports
+- Risk Summaries
+- Remediation Reports
 
 ---
 
-## Author
+## **Future Improvements**
+
+Future versions may include:
+
+- Enterprise Firewall Configuration Parsing
+- Cisco ACL Support
+- AWS Security Group Auditing
+- Azure Network Security Group Auditing
+- Cloud Firewall Auditing
+- Rule Shadowing Detection
+- Unused Rule Detection
+- Overlapping CIDR Detection
+- Rule Expiration Detection
+- CVSS-Based Risk Scoring
+- NIST Control Mapping
+- CIS Benchmark Mapping
+- CSV/PDF Report Export
+- Database Storage
+- REST API Integration
+- SIEM Integration
+- Enterprise GRC Dashboard
+
+---
+
+## **Author**
 
 **Saif Ali**
 
-* BS Information Technology Student
-* Aspiring Cloud Security & GRC Professional
-* University of Layyah
-* GitHub: [Saif2246](https://github.com/Saif2246)
-* LinkedIn: [saif-ali-a22230409](https://www.linkedin.com/in/saif-ali-a22230409/)
+BS Information Technology Student  
+Aspiring Cloud Security & GRC Professional  
+University of Layyah
+
+- GitHub: [Saif2246](https://github.com/Saif2246)
+- LinkedIn: [saif-ali-a22230409](https://www.linkedin.com/in/saif-ali-a22230409/)
 
 ---
 
-## Disclaimer
+## **Disclaimer**
 
 This project was developed for **educational and ethical cybersecurity purposes only**.
 
@@ -646,6 +833,16 @@ The author is not responsible for unauthorized use or misuse of this project.
 
 ---
 
-## Acknowledgements
+## **Acknowledgements**
 
-This project was developed as part of my cybersecurity learning journey to strengthen practical skills in **network security, firewall auditing, security automation, compliance assessment, risk analysis, and GRC-oriented security reporting**.
+This project was developed as part of my cybersecurity learning journey to strengthen practical skills in:
+
+- Network Security
+- Firewall Auditing
+- Security Automation
+- Compliance Assessment
+- Risk Analysis
+- Security Reporting
+- GRC-oriented Security Analysis
+
+The project was designed to demonstrate how security automation can support both technical security assessment and basic GRC workflows.

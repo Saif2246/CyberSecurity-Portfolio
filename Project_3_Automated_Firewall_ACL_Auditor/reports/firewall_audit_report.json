@@ -1,12 +1,12 @@
 {
     "summary": {
-        "total_findings": 7,
+        "total_findings": 8,
         "high": 6,
-        "medium": 1,
+        "medium": 2,
         "low": 0,
         "compliant": 0,
-        "non_compliant": 7,
-        "risk_score": 65,
+        "non_compliant": 8,
+        "risk_score": 70,
         "overall_risk": "CRITICAL"
     },
     "statistics": {
@@ -27,6 +27,10 @@
             "recommendation": "Restrict the source to approved networks or IP ranges.",
             "control": "Network Access Control",
             "requirement": "Network access must be restricted to approved sources.",
+            "nist_control": "NIST SP 800-53 Rev. 5 AC-4",
+            "nist_control_title": "Information Flow Enforcement",
+            "cis_control": "CIS Control 12",
+            "cis_control_title": "Network Infrastructure Management",
             "compliance": "NON-COMPLIANT",
             "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
         },
@@ -38,6 +42,10 @@
             "recommendation": "Restrict access to only the protocols and ports required by the application.",
             "control": "Least Privilege Network Access",
             "requirement": "Only required protocols and ports should be allowed.",
+            "nist_control": "NIST SP 800-53 Rev. 5 AC-6",
+            "nist_control_title": "Least Privilege",
+            "cis_control": "CIS Control 4",
+            "cis_control_title": "Secure Configuration of Enterprise Assets and Software",
             "compliance": "NON-COMPLIANT",
             "remediation": "Replace 'any' protocol and port with only the protocols and ports required by the application."
         },
@@ -49,6 +57,10 @@
             "recommendation": "Restrict the source to approved networks or IP ranges.",
             "control": "Network Access Control",
             "requirement": "Network access must be restricted to approved sources.",
+            "nist_control": "NIST SP 800-53 Rev. 5 AC-4",
+            "nist_control_title": "Information Flow Enforcement",
+            "cis_control": "CIS Control 12",
+            "cis_control_title": "Network Infrastructure Management",
             "compliance": "NON-COMPLIANT",
             "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
         },
@@ -60,6 +72,10 @@
             "recommendation": "Disable Telnet or replace it with a secure alternative.",
             "control": "Secure Services",
             "requirement": "Insecure network services should be disabled or replaced.",
+            "nist_control": "NIST SP 800-53 Rev. 5 CM-7",
+            "nist_control_title": "Least Functionality",
+            "cis_control": "CIS Control 4",
+            "cis_control_title": "Secure Configuration of Enterprise Assets and Software",
             "compliance": "NON-COMPLIANT",
             "remediation": "Disable the insecure service or replace it with a secure alternative such as SSH."
         },
@@ -71,6 +87,10 @@
             "recommendation": "Restrict the source to approved networks or IP ranges.",
             "control": "Network Access Control",
             "requirement": "Network access must be restricted to approved sources.",
+            "nist_control": "NIST SP 800-53 Rev. 5 AC-4",
+            "nist_control_title": "Information Flow Enforcement",
+            "cis_control": "CIS Control 12",
+            "cis_control_title": "Network Infrastructure Management",
             "compliance": "NON-COMPLIANT",
             "remediation": "Replace 0.0.0.0/0 with an approved internal or administrative IP range."
         },
@@ -82,6 +102,10 @@
             "recommendation": "Remove the duplicate rule after verification.",
             "control": "Firewall Rule Management",
             "requirement": "Firewall rules should be unique and properly managed.",
+            "nist_control": "NIST SP 800-53 Rev. 5 CM-3",
+            "nist_control_title": "Configuration Change Control",
+            "cis_control": "CIS Control 4",
+            "cis_control_title": "Secure Configuration of Enterprise Assets and Software",
             "compliance": "NON-COMPLIANT",
             "remediation": "Remove the duplicate rule after verifying that the original rule is still required."
         },
@@ -93,8 +117,28 @@
             "recommendation": "Review rule order and remove or correct the conflicting rule.",
             "control": "Firewall Rule Management",
             "requirement": "Firewall rules should not contain conflicting actions.",
+            "nist_control": "NIST SP 800-53 Rev. 5 CM-3",
+            "nist_control_title": "Configuration Change Control",
+            "cis_control": "CIS Control 12",
+            "cis_control_title": "Network Infrastructure Management",
             "compliance": "NON-COMPLIANT",
             "remediation": "Review the conflicting rules and correct the rule order or remove the unnecessary rule."
+        },
+        {
+            "rule_id": "7",
+            "finding": "Shadowed Firewall Rule",
+            "severity": "MEDIUM",
+            "reason": "Rule 7 is covered by earlier Rule 6 with the same action. The later rule may never be reached.",
+            "recommendation": "Review the rule order and remove or consolidate unnecessary shadowed rules.",
+            "related_rule": "6",
+            "control": "Firewall Rule Management",
+            "requirement": "Firewall rules should be ordered and maintained so that required rules remain effective.",
+            "nist_control": "NIST SP 800-53 Rev. 5 CM-3",
+            "nist_control_title": "Configuration Change Control",
+            "cis_control": "CIS Control 4",
+            "cis_control_title": "Secure Configuration of Enterprise Assets and Software",
+            "compliance": "NON-COMPLIANT",
+            "remediation": "Review the earlier covering rule and remove or consolidate the later rule if it is unnecessary."
         }
     ]
 }

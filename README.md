@@ -11,7 +11,7 @@
 
 ---
 
-## Overview
+## **Overview**
 
 Welcome to my Cyber Security Portfolio.
 
@@ -21,15 +21,15 @@ This repository showcases a collection of hands-on cybersecurity projects develo
 
 ---
 
-## Projects
+## **Projects**
 
 This section showcases completed and planned cybersecurity projects developed as part of my learning journey in Network Security, Cloud Security, Security Operations (SecOps), and Governance, Risk & Compliance (GRC).
 
 | Project | Status | Technologies | Focus Area |
 |---|---|---|---|
-| [Network Reconnaissance & Database Analyzer](./Project_1_Network_Reconnaissance_Database_Analyzer/) | ✅ Completed | Python, Nmap, XML Parsing, MariaDB, Linux | Network Reconnaissance, Nmap Analysis, Security Data Processing |
-| [Network Service Enumeration Tool](./Project_2_Service_Enumeration/) | ✅ Completed | Python, Socket Programming, Multithreading, MariaDB, Kali Linux | TCP Scanning, Service Identification, Banner Grabbing |
-| [Automated Firewall & ACL Rule Auditor](./Project_3_Automated_Firewall_ACL_Auditor/) | ✅ Completed | Python, Firewall & ACL Auditing, JSON, HTML, Tkinter, Kali Linux | Firewall Security, Rule Analysis, Risk Assessment, Compliance & Security Automation |
+| [**Network Reconnaissance & Database Analyzer**](./Project_1_Network_Reconnaissance_Database_Analyzer/) | ✅ Completed | Python, Nmap, XML Parsing, MariaDB, Linux | Network Reconnaissance, Nmap Analysis, Security Data Processing |
+| [**Network Service Enumeration Tool**](./Project_2_Service_Enumeration/) | ✅ Completed | Python, Socket Programming, Multithreading, Kali Linux | TCP Scanning, Service Identification, Banner Grabbing |
+| [**Automated Firewall & ACL Rule Auditor**](./Project_3_Automated_Firewall_ACL_Auditor/) | ✅ Completed | Python, Firewall & ACL Auditing, JSON, HTML, Tkinter, Kali Linux | Firewall Security, Rule Analysis, Risk Assessment, Compliance & Security Automation |
 | SecOps Log Aggregation & Threat Dashboard | ⏳ Planned | Python, Log Analysis, SIEM Concepts | Security Monitoring & Threat Detection |
 | Cloud IAM Privilege Escalation & Access Auditor | ⏳ Planned | AWS IAM, Python, Cloud Security | Identity & Access Management Security |
 | Cloud Asset Vulnerability Risk Scorer | ⏳ Planned | Python, Cloud Security, Risk Analysis | Cloud Asset Risk Assessment |
@@ -38,7 +38,31 @@ This section showcases completed and planned cybersecurity projects developed as
 | Automated CIS/NIST Cloud Compliance Mapper | ⏳ Planned | Python, CIS, NIST Frameworks | Compliance Automation |
 | Enterprise GRC Risk Assessment Platform | ⏳ Planned | Python, Risk Management, GRC Concepts | Enterprise Risk & Audit Automation |
 
-### Project 3 Highlights
+### **Project 1 Highlights**
+
+- Network Reconnaissance Automation
+- Nmap XML Output Parsing
+- Port and Service Analysis
+- Network Security Data Processing
+- MariaDB Database Integration
+- Python Security Automation
+- Linux/Kali Linux Environment
+- Structured Security Data Storage
+- Network Scan Result Analysis
+
+### **Project 2 Highlights**
+
+- TCP Port Scanning
+- Socket Programming
+- Multithreaded Scanning
+- Service Enumeration
+- Banner Grabbing
+- Common Port Detection
+- Command-Line Security Tool
+- Python Network Automation
+- Security Results Reporting
+
+### **Project 3 Highlights**
 
 - Automated Firewall and ACL Rule Auditing
 - Broad Source Access Detection
@@ -63,15 +87,15 @@ This section showcases completed and planned cybersecurity projects developed as
 
 ---
 
-## Technology Stack
+## **Technology Stack**
 
-### Programming Languages
+### **Programming Languages**
 
 - Python
 - Java
 - C++
 
-### Security & Networking
+### **Security & Networking**
 
 - TCP/IP Networking
 - Socket Programming
@@ -89,20 +113,20 @@ This section showcases completed and planned cybersecurity projects developed as
 - Security Automation
 - Compliance Assessment
 
-### Operating Systems & Tools
+### **Operating Systems & Tools**
 
 - Kali Linux
 - Linux Environment
 - Git & GitHub
 - VS Code
 
-### Databases
+### **Databases**
 
 - MariaDB
 - MySQL
 - Database Integration
 
-### Cloud & Security Domains
+### **Cloud & Security Domains**
 
 - Cloud Security Fundamentals
 - Identity and Access Management (IAM)
@@ -112,7 +136,7 @@ This section showcases completed and planned cybersecurity projects developed as
 
 ---
 
-## Repository Structure
+## **Repository Structure**
 
 ```text
 CyberSecurity-Portfolio/
@@ -153,9 +177,9 @@ CyberSecurity-Portfolio/
 
 ---
 
-## Skills Demonstrated
+## **Skills Demonstrated**
 
-### Programming & Automation
+### **Programming & Automation**
 
 - Python Security Automation
 - Socket Programming
@@ -169,7 +193,7 @@ CyberSecurity-Portfolio/
 - GUI Development with Tkinter
 - Automated Report Generation
 
-### Network Security
+### **Network Security**
 
 - TCP/IP Networking
 - Network Reconnaissance
@@ -183,7 +207,7 @@ CyberSecurity-Portfolio/
 - Least Privilege
 - Firewall Rule Management
 
-### System & Database Skills
+### **System & Database Skills**
 
 - Linux Security Environment
 - Kali Linux Usage
@@ -192,7 +216,7 @@ CyberSecurity-Portfolio/
 - JSON Security Reporting
 - HTML Security Reporting
 
-### Security Engineering Concepts
+### **Security Engineering Concepts**
 
 - Defensive Security Practices
 - Security Report Generation
@@ -211,7 +235,7 @@ CyberSecurity-Portfolio/
 
 ---
 
-## Future Projects Roadmap
+## **Future Projects Roadmap**
 
 The following projects are planned to expand my skills in Cloud Security, Security Operations (SecOps), DevSecOps, and Governance, Risk & Compliance (GRC).
 
@@ -227,7 +251,7 @@ The following projects are planned to expand my skills in Cloud Security, Securi
 
 ---
 
-## Learning Goal
+## **Learning Goal**
 
 The main objective of this portfolio is to develop practical and industry-relevant cybersecurity skills through continuous hands-on projects.
 
@@ -244,7 +268,7 @@ Through these projects, I aim to strengthen my ability to design, analyze, and i
 
 ---
 
-## Author
+## **Author**
 
 **Saif Ali**
 
@@ -252,7 +276,7 @@ BS Information Technology Student
 
 Aspiring Cloud Security & GRC Professional
 
-### Areas of Interest
+### **Areas of Interest**
 
 - Cloud Security
 - Security Operations (SecOps)
@@ -260,14 +284,14 @@ Aspiring Cloud Security & GRC Professional
 - Network Security
 - Security Automation
 
-### Profiles
+### **Profiles**
 
-- GitHub: [Saif2246](https://github.com/Saif2246)
-- LinkedIn: [saif-ali-a22230409](https://www.linkedin.com/in/saif-ali-a22230409/)
+- GitHub: [**Saif2246**](https://github.com/Saif2246)
+- LinkedIn: [**saif-ali-a22230409**](https://www.linkedin.com/in/saif-ali-a22230409/)
 
 ---
 
-## Disclaimer
+## **Disclaimer**
 
 All projects in this repository are created for educational purposes, security research, and authorized testing environments only.
 
@@ -277,7 +301,7 @@ The purpose of this portfolio is to demonstrate cybersecurity learning, defensiv
 
 ---
 
-## License
+## **License**
 
 This repository is licensed under the MIT License.
 
@@ -285,7 +309,7 @@ You are free to use, modify, and distribute the code for educational and authori
 
 ---
 
-## Current Learning Focus
+## **Current Learning Focus**
 
 Currently improving skills in:
 

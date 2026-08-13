@@ -1,13 +1,21 @@
 rule_id,source,destination,protocol,port,action,description
 1,10.10.0.0/16,10.10.20.5,tcp,443,allow,Internal HTTPS access
-2,0.0.0.0/0,10.10.20.5,tcp,22,allow,Administrative SSH access
+2,10.10.10.0/24,10.10.20.5,tcp,22,allow,Restricted administrative SSH access
 3,10.10.0.0/16,10.10.20.5,udp,53,allow,Internal DNS access
-4,10.10.0.0/16,10.10.20.10,any,any,allow,Application server access
-5,0.0.0.0/0,10.10.20.20,tcp,23,allow,Remote Telnet access
+4,10.10.0.0/16,10.10.20.10,tcp,443,allow,Application server HTTPS access
+5,0.0.0.0/0,10.10.20.20,tcp,23,allow,Public Telnet access
 6,10.10.0.0/16,10.10.20.30,tcp,443,allow,Internal web application
 7,10.10.0.0/16,10.10.20.30,tcp,443,allow,Duplicate HTTPS rule
 8,10.10.0.0/16,10.10.20.40,tcp,22,allow,Internal SSH access
 9,10.10.0.0/16,10.10.20.40,tcp,22,deny,Conflicting SSH rule
 10,10.10.0.0/16,10.10.20.50,udp,123,allow,Internal NTP access
-11,192.168.1.0/24,10.10.20.60,tcp,3306,allow,Database access
+11,192.168.1.0/24,10.10.20.60,tcp,3306,allow,Restricted database access
 12,0.0.0.0/0,10.10.20.70,icmp,any,allow,Public ICMP access
+13,0.0.0.0/0,10.10.20.80,any,any,allow,Unrestricted public application access
+14,10.10.0.0/16,10.10.20.90,tcp,80,allow,Internal HTTP access
+15,10.10.0.0/16,10.10.20.90,tcp,80,deny,Conflicting HTTP rule
+16,0.0.0.0/0,10.10.20.100,tcp,3389,allow,Public RDP access
+17,10.10.0.0/16,10.10.20.110,udp,161,allow,Internal SNMP access
+18,0.0.0.0/0,10.10.20.120,tcp,25,allow,Public SMTP access
+19,10.10.0.0/16,10.10.20.130,any,any,allow,Broad internal access
+20,10.10.0.0/16,10.10.20.140,tcp,443,deny,Blocked internal HTTPS access

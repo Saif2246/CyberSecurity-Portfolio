@@ -614,13 +614,23 @@ python3 -c "import json; r=json.load(open('reports/firewall_audit_report.json'))
 
 The terminal screenshot demonstrates the command-line execution of the automated firewall audit, including security findings, severity classification, compliance status, risk score, and rule statistics.
 
+![Terminal Security Audit](screenshots/terminal-audit.png)
+
+---
+
 ### **2. HTML Security Dashboard**
 
 The HTML dashboard provides a visual security assessment containing risk information, firewall statistics, security findings, compliance information, and remediation guidance.
 
+![HTML Security Dashboard](screenshots/html-dashboard.png)
+
+---
+
 ### **3. GUI Security Dashboard**
 
 The Tkinter GUI provides an interactive interface for running the firewall audit, viewing security metrics, reviewing findings, and opening the generated HTML report.
+
+![GUI Security Dashboard](screenshots/gui-dashboard.png)
 
 ---
 

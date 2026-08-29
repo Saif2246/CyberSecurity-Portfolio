@@ -1,0 +1,68 @@
+{
+    "project": "KiroTrace",
+    "generated_at": "2026-08-24T17:34:10.601827+00:00",
+    "stage": "Day 3",
+    "detection_engine": {
+        "name": "SSH Detection Engine",
+        "day_3a": "SSH Brute Force Detection",
+        "day_3b": "Possible Account Compromise Detection"
+    },
+    "configuration": {
+        "failed_attempt_threshold": 5,
+        "detection_window_minutes": 5
+    },
+    "input": {
+        "ssh_events": 7
+    },
+    "summary": {
+        "total_alerts": 2,
+        "critical": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0,
+        "brute_force_alerts": 1,
+        "compromise_alerts": 1
+    },
+    "alerts": [
+        {
+            "alert_id": "SSH-COMPROMISE-1b9d906a325b-1",
+            "alert_type": "Possible Account Compromise",
+            "detection_stage": "Day 3B",
+            "source_ip": "203.0.113.50",
+            "username": "admin",
+            "failed_attempts": 5,
+            "successful_login": true,
+            "attack_window_number": 1,
+            "first_failed_timestamp": "2026-08-14T10:05:33+00:00",
+            "last_failed_timestamp": "2026-08-14T10:05:53+00:00",
+            "successful_login_timestamp": "2026-08-14T10:06:02+00:00",
+            "time_difference_seconds": 9,
+            "correlation_window_minutes": 5.0,
+            "severity": "CRITICAL",
+            "confidence": "HIGH",
+            "status": "SUSPICIOUS",
+            "evidence_count": 6,
+            "description": "A successful SSH login occurred shortly after multiple failed authentication attempts from the same source IP and username. This pattern may indicate successful credential use following suspicious authentication activity; additional evidence is required to confirm compromise."
+        },
+        {
+            "alert_id": "SSH-BRUTE-97893e7d3f21-1",
+            "alert_type": "Possible SSH Brute Force",
+            "detection_stage": "Day 3A",
+            "source_ip": "203.0.113.50",
+            "username": "admin",
+            "failed_attempts": 5,
+            "threshold": 5,
+            "threshold_exceeded": true,
+            "attack_window_number": 1,
+            "first_failed_timestamp": "2026-08-14T10:05:33+00:00",
+            "last_failed_timestamp": "2026-08-14T10:05:53+00:00",
+            "detection_window_minutes": 5.0,
+            "actual_attack_window_seconds": 20,
+            "severity": "HIGH",
+            "confidence": "HIGH",
+            "status": "SUSPICIOUS",
+            "evidence_count": 5,
+            "description": "Multiple failed SSH authentication attempts from the same source IP and username reached or exceeded the configured threshold within the detection window."
+        }
+    ]
+}

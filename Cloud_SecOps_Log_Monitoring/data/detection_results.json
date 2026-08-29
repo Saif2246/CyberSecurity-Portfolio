@@ -1,0 +1,26 @@
+[
+    {
+        "alert_type": "Possible SSH Brute Force",
+        "source_ip": "203.0.113.50",
+        "username": "admin",
+        "failed_attempts": 5,
+        "threshold": 5,
+        "first_failed_timestamp": "2026-08-14T10:05:33+00:00",
+        "last_failed_timestamp": "2026-08-14T10:05:53+00:00",
+        "detection_window_minutes": 5,
+        "severity": "HIGH"
+    },
+    {
+        "alert_type": "Possible Account Compromise",
+        "source_ip": "203.0.113.50",
+        "username": "admin",
+        "failed_attempts": 5,
+        "successful_login": true,
+        "first_failed_timestamp": "2026-08-14T10:05:33+00:00",
+        "last_failed_timestamp": "2026-08-14T10:05:53+00:00",
+        "successful_login_timestamp": "2026-08-14T10:06:02+00:00",
+        "time_difference_seconds": 9,
+        "correlation_window_minutes": 5,
+        "severity": "CRITICAL"
+    }
+]

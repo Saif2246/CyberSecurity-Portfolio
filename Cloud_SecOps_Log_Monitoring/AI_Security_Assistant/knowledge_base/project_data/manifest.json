@@ -1,0 +1,28 @@
+﻿{
+  "sources": [
+    {
+      "name": "KiroTrace Detection Results",
+      "path": "../../../src/output/detection_results.json",
+      "type": "security_detection",
+      "read_only": true
+    },
+    {
+      "name": "KiroTrace Correlation Results",
+      "path": "../../../src/output/correlation_results.json",
+      "type": "security_correlation",
+      "read_only": true
+    },
+    {
+      "name": "KiroTrace Incident Story",
+      "path": "../../../src/output/incident_story.json",
+      "type": "security_incident",
+      "read_only": true
+    },
+    {
+      "name": "KiroTrace Pipeline Results",
+      "path": "../../../src/output/pipeline_results.json",
+      "type": "pipeline_result",
+      "read_only": true
+    }
+  ]
+}

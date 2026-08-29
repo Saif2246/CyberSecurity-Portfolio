@@ -1,0 +1,54 @@
+[
+  {
+    "eventTime": "2026-08-14T10:15:22Z",
+    "eventName": "ConsoleLogin",
+    "eventSource": "signin.amazonaws.com",
+    "sourceIPAddress": "192.168.1.10",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "saif"
+    },
+    "responseElements": {
+      "ConsoleLogin": "Success"
+    }
+  },
+  {
+    "eventTime": "2026-08-14T10:20:10Z",
+    "eventName": "CreateUser",
+    "eventSource": "iam.amazonaws.com",
+    "sourceIPAddress": "192.168.1.10",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "admin"
+    },
+    "responseElements": {
+      "success": true
+    }
+  },
+  {
+    "eventTime": "2026-08-14T10:25:01Z",
+    "eventName": "AuthorizeSecurityGroupIngress",
+    "eventSource": "ec2.amazonaws.com",
+    "sourceIPAddress": "203.0.113.50",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "admin"
+    },
+    "responseElements": {
+      "success": true
+    }
+  },
+  {
+    "eventTime": "2026-08-14T10:26:01Z",
+    "eventName": "PutBucketPolicy",
+    "eventSource": "s3.amazonaws.com",
+    "sourceIPAddress": "203.0.113.50",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "admin"
+    },
+    "responseElements": {
+      "success": true
+    }
+  }
+]
